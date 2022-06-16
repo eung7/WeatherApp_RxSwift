@@ -17,6 +17,7 @@
 		E5B3843D285B109F00AB8327 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = E5B3843C285B109F00AB8327 /* RxCocoa */; };
 		E5B3843F285B109F00AB8327 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E5B3843E285B109F00AB8327 /* RxSwift */; };
 		E5B38442285B10CE00AB8327 /* URLRequest+Exensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B38441285B10CE00AB8327 /* URLRequest+Exensions.swift */; };
+		E5B38444285B171C00AB8327 /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B38443285B171C00AB8327 /* URL+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		E5B38432285B0C0000AB8327 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5B38438285B0FF400AB8327 /* WeatherResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherResult.swift; sourceTree = "<group>"; };
 		E5B38441285B10CE00AB8327 /* URLRequest+Exensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+Exensions.swift"; sourceTree = "<group>"; };
+		E5B38443285B171C00AB8327 /* URL+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				E5B38441285B10CE00AB8327 /* URLRequest+Exensions.swift */,
+				E5B38443285B171C00AB8327 /* URL+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5B38429285B0C0000AB8327 /* ViewController.swift in Sources */,
+				E5B38444285B171C00AB8327 /* URL+Extensions.swift in Sources */,
 				E5B38439285B0FF400AB8327 /* WeatherResult.swift in Sources */,
 				E5B38425285B0C0000AB8327 /* AppDelegate.swift in Sources */,
 				E5B38427285B0C0000AB8327 /* SceneDelegate.swift in Sources */,
