@@ -19,7 +19,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        cityNameTextField.rx.value
+        cityNameTextField.rx.controlEvent(.editingDidEndOnExit)
+            .asObservable()
+            .map { self.cityNameTextField.text }
             .subscribe(onNext: { city in
                 if let city = city {
                     if city.isEmpty {
