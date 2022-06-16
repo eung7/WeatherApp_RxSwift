@@ -14,6 +14,9 @@
 		E5B3842E285B0C0000AB8327 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5B3842D285B0C0000AB8327 /* Assets.xcassets */; };
 		E5B38431285B0C0000AB8327 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5B3842F285B0C0000AB8327 /* LaunchScreen.storyboard */; };
 		E5B38439285B0FF400AB8327 /* WeatherResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B38438285B0FF400AB8327 /* WeatherResult.swift */; };
+		E5B3843D285B109F00AB8327 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = E5B3843C285B109F00AB8327 /* RxCocoa */; };
+		E5B3843F285B109F00AB8327 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E5B3843E285B109F00AB8327 /* RxSwift */; };
+		E5B38442285B10CE00AB8327 /* URLRequest+Exensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B38441285B10CE00AB8327 /* URLRequest+Exensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,7 @@
 		E5B38430285B0C0000AB8327 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E5B38432285B0C0000AB8327 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5B38438285B0FF400AB8327 /* WeatherResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherResult.swift; sourceTree = "<group>"; };
+		E5B38441285B10CE00AB8327 /* URLRequest+Exensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+Exensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5B3843F285B109F00AB8327 /* RxSwift in Frameworks */,
+				E5B3843D285B109F00AB8327 /* RxCocoa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +64,7 @@
 		E5B38423285B0C0000AB8327 /* WeatherApp_RxSwift */ = {
 			isa = PBXGroup;
 			children = (
+				E5B38440285B10B300AB8327 /* Extensions */,
 				E5B3843A285B0FF900AB8327 /* Models */,
 				E5B38424285B0C0000AB8327 /* AppDelegate.swift */,
 				E5B38426285B0C0000AB8327 /* SceneDelegate.swift */,
@@ -78,6 +85,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		E5B38440285B10B300AB8327 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E5B38441285B10CE00AB8327 /* URLRequest+Exensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -94,6 +109,10 @@
 			dependencies = (
 			);
 			name = WeatherApp_RxSwift;
+			packageProductDependencies = (
+				E5B3843C285B109F00AB8327 /* RxCocoa */,
+				E5B3843E285B109F00AB8327 /* RxSwift */,
+			);
 			productName = WeatherApp_RxSwift;
 			productReference = E5B38421285B0C0000AB8327 /* WeatherApp_RxSwift.app */;
 			productType = "com.apple.product-type.application";
@@ -122,6 +141,9 @@
 				Base,
 			);
 			mainGroup = E5B38418285B0C0000AB8327;
+			packageReferences = (
+				E5B3843B285B109F00AB8327 /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = E5B38422285B0C0000AB8327 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -153,6 +175,7 @@
 				E5B38439285B0FF400AB8327 /* WeatherResult.swift in Sources */,
 				E5B38425285B0C0000AB8327 /* AppDelegate.swift in Sources */,
 				E5B38427285B0C0000AB8327 /* SceneDelegate.swift in Sources */,
+				E5B38442285B10CE00AB8327 /* URLRequest+Exensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,6 +393,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E5B3843B285B109F00AB8327 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 6.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E5B3843C285B109F00AB8327 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E5B3843B285B109F00AB8327 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		E5B3843E285B109F00AB8327 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E5B3843B285B109F00AB8327 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E5B38419285B0C0000AB8327 /* Project object */;
 }
